@@ -1,0 +1,265 @@
+<!-- header start -->
+<include file="Public/Header" />
+<!-- header end -->
+
+<!-- right content start  -->
+<div class="content-right">
+	<div class="content">
+		<!-- form start -->
+		<form class="am-form view-list" action="{{:U('Admin/Kehu/Index')}}" method="POST">
+			
+			<div class="am-g">
+				<input type="text" class="am-radius form-keyword" placeholder="姓名/手机" name="keyword" />
+				<button type="submit" class="am-btn am-btn-secondary am-btn-sm am-radius form-submit">查询</button>
+				<label class="fs-12 m-l-5 c-p fw-100 more-submit">
+					更多筛选					<input type="checkbox" name="is_more" value="1" id="is_more">
+					<i class="am-icon-angle-down"></i>
+				</label>
+
+				<div class="more-where">
+	
+					<select name="gender" class="am-radius c-p m-t-10 m-l-5 param-where">
+						<option value="-1">性别</option>
+						<option value="0">保密</option><option value="1">女</option><option value="2">男</option>					</select>
+					<div class="param-date param-where m-l-5">
+						<input type="text" name="time_start" readonly="readonly" class="am-radius m-t-10" placeholder="出生开始" id="time_start">
+						<span>~</span>
+						<input type="text" readonly="readonly" class="am-radius m-t-10" placeholder="出生结束" name="time_end" id="time_end">
+					</div>
+
+					<input type="text" class="am-radius c-p m-t-10 m-l-5 param-where"  placeholder="年龄" name="age" >
+					<!-- <select name="groupid" class="am-radius c-p m-t-10 m-l-5 param-where" >
+						<option value="-1">客户状态</option>
+						<option value="1">预约</option><option value="2">到访</option><option value="3">潜在</option>	
+					</select> -->
+				</div>
+
+
+
+			</div>
+        </form>
+        <!-- form end -->
+
+        <!-- operation start -->
+        <div class="am-g m-t-15">
+            <a href="{{:U('Admin/Kehu/SaveInfo')}}" class="am-btn am-btn-secondary am-radius am-btn-xs am-icon-plus"> {{:L('common_operation_add')}}</a>
+            <if condition="!IsMobile()">
+            	<a href="{{$excel_url}}" class="am-btn am-btn-success am-btn-xs m-l-10 am-icon-file-excel-o am-radius"> {{:L('common_operation_excel_export_name')}}</a>
+            	<a href="javascript:;" class="am-btn am-btn-primary am-btn-xs m-l-10 am-icon-cloud-upload am-radius" data-am-modal="{target: '#excel-import-win'}"> {{:L('common_operation_excel_import_name')}}</a>
+            	<!-- excel win html start -->
+				<include file="Lib/ExcelWinHtml" />
+				<!-- excel win html end -->
+            </if>
+        </div>
+        <!-- operation end -->
+
+		<!-- list start -->
+		<table class="am-table am-table-striped am-table-hover am-text-middle m-t-10 m-l-5">
+			<thead>
+				<tr>
+					<th>编号</th>
+					<th>日期</th>
+					<if condition="$_SESSION['admin']['id'] eq 1"><th>分校</th></if>
+
+				<th>姓名</th>
+
+
+					<th class="am-hide-sm-only">年龄</th>
+					<th>性别</th>
+					<th class="am-hide-sm-only">联系人</th>
+					<th class="am-hide-sm-only">电话</th>
+					<th class="am-hide-sm-only">咨询课程</th>
+					<th>跟踪</th>
+					
+					<th>状态</th>	
+					
+					
+
+					<th>{{:L('common_operation_name')}}</th>
+				</tr>
+			</thead>
+			<tbody>
+				<if condition="!empty($list)">
+					<foreach name="list" item="v">
+						<tr id="data-list-{{$v.id}}-{{$v.id_card}}">
+							<td>{{$v.id}}</td>
+							<if condition="$v['groupid'] eq 1">
+								<td>{{$v.yuyue_time}}</td>
+							<elseif condition="$v['groupid'] eq 2" />
+								<td>{{$v.daofang_time}}</td>
+							<else />
+								<td>{{$v.updatetime}}</td>
+							</if>
+							
+							<if condition="$_SESSION['admin']['id'] eq 1">
+								<td>{{$v.xqname}}</td>
+							</if>
+							<td class="am-hide-sm-only">{{$v.username}}</td>
+							<td>{{$v.age}}岁</td>
+							<td class="am-hide-sm-only">{{$v.sex}}</td>
+							<td class="am-hide-sm-only">{{$v.lxr_1}}</td>
+							<td class="am-hide-sm-only">{{$v.lxrtel_1}}</td>
+							<td class="am-hide-sm-only">{{$v.zx_kc}}</td>
+		
+							
+							<td class="am-hide-sm-only"><button class="am-btn am-btn-default am-btn-xs am-radius" onclick="xinzeng_genjin({{$v.id}})">增加</button> | <button class="am-btn am-btn-default am-btn-xs am-radius" onclick="chakan_genjin({{$v.id}})">查看</button>
+								
+							</td>
+							
+							<td class="am-hide-sm-only">
+							<if condition="$v['groupid'] elt 3">
+							<input type="radio" value="1"  <if condition="$v['groupid'] eq 1"> checked="checked" </if>onclick="gaibian({{$v.id}},1)">预约
+							<input type="radio" value="3" <if condition="$v['groupid'] eq 3"> checked="checked" </if> onclick="gaibian({{$v.id}},2)">到访
+							<input type="radio" value="2"  <if condition="$v['groupid'] eq 2"> checked="checked" </if> onclick="gaibian({{$v.id}},3)">潜在
+							<else />
+							{{:C('kehu_group')[$v['groupid']]}}
+							</if>
+							</td>
+							
+
+							<td class="view-operation">
+								<if condition="$v['groupid'] eq 3">
+								<a href="{{:U('Admin/Caiwu/SaveInfo', array('id'=>$v['id']))}}">
+									<button class="am-btn am-btn-default am-btn-xs am-radius am-icon-line-chart" data-am-popover="{content: '生成财务', trigger: 'hover focus'}"></button>
+								</a>
+								</if>
+								<a href="{{:U('Admin/Kehu/SaveInfo', array('id'=>$v['id'],'groupid'=>$groupid))}}">
+									<button class="am-btn am-btn-default am-btn-xs am-radius am-icon-edit" data-am-popover="{content: '{{:L('common_operation_edit')}}', trigger: 'hover focus'}"></button>
+								</a>
+								<button class="am-btn am-btn-default am-btn-xs am-radius am-icon-trash-o submit-delete" data-url="{{:U('Admin/Kehu/Delete')}}" data-am-popover="{content: '{{:L('common_operation_delete')}}', trigger: 'hover focus'}" data-id="{{$v.id}}"></button>
+							</td>
+						</tr>
+					</foreach>
+				<else />
+					<tr><td colspan="10" class="table-no">{{:L('common_not_data_tips')}}</td></tr>
+				</if>
+			</tbody>
+		</table>
+		<!-- list end -->
+
+		<!-- page start -->
+		<if condition="!empty($list)">
+			{{$page_html}}
+		</if>
+		<!-- page end -->
+	</div>
+</div>
+<!-- right content end  -->
+		
+<!-- footer start -->
+<include file="Public/Footer" />
+<!-- footer end -->
+
+<if condition="!IsMobile()">
+	<!-- excel win js start -->
+	<include file="Lib/ExcelWinJs" />
+	<!-- excel win js end -->
+</if>
+
+<script>
+
+
+ function xinzeng_genjin(khid){
+		var khid = khid;
+
+		
+		var url = "/admin.php?m=Admin&c=Kehu&a=xinzeng_genjin";
+		
+
+		if(typeof(khid)=="undefined"){
+			layer.msg('参数错误,请刷新页面重试');
+				// window.location.reload();
+				return false;
+		}
+
+		layer.prompt(
+			{title: '新增跟进记录', formType: 2},
+			 function(content){
+				$.ajax({
+					url:url,
+					type:"POST",
+					async:false,
+					data:{khid:khid,content:content},
+					dataType:'json',
+					success:function(meg){
+						if(meg.code == 0){
+							layer.msg('添加成功');
+							
+						}else{
+							layer.msg('失败，请重试');
+						}
+						
+
+					}
+				});	
+
+			layer.closeAll();
+			
+		});
+
+	}
+
+	function chakan_genjin(khid){
+
+		var khid = khid;
+
+		var url = "/admin.php?m=Admin&c=Kehu&a=chakan_genjin";
+
+		if(typeof(khid)=="undefined"){
+			layer.msg('参数错误,请刷新页面重试');
+				// window.location.reload();
+				return false;
+		}
+		$.ajax({
+			url:url,
+			type:"POST",
+			async:false,
+			data:{khid_id:khid},
+			dataType:'json',
+			success:function(meg){
+					layer.open({
+						type: 1,
+						title:'跟进记录',
+						skin: 'layui-layer-rim', //加上边框
+						area: ['600px', 'auto'], //宽高
+						content: meg
+					});
+			}
+		});	
+
+		
+	}
+
+	 function gaibian(id, zt){
+		var id = id;
+		var zt = zt;
+
+
+		
+		var url = "/admin.php?m=Admin&c=Kehu&a=gaibian";
+
+				$.ajax({
+					url:url,
+					type:"POST",
+					async:false,
+					data:{id:id,zt:zt},
+					dataType:'json',
+					success:function(msg){
+		
+							layer.msg(msg.msg)
+						location.reload();
+					}
+				});	
+
+
+
+
+
+	}
+
+
+
+
+
+
+</script>

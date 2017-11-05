@@ -1,0 +1,38 @@
+<!-- header start -->
+<include file="Public/Header" />
+<!-- header end -->
+
+<!-- right content start  -->
+<div class="content-right">
+	<!-- <div class="content">
+		<div class="am-g">
+				<div class="param-date param-where m-l-5">
+						<input type="text" name="time_start" readonly="readonly" class="am-radius m-t-10" placeholder="开始" id="time_start">
+						<span>~</span>
+						<input type="text" readonly="readonly" class="am-radius m-t-10" placeholder="结束" name="time_end" id="time_end">
+					</div>
+				<button type="submit" class="am-btn am-btn-secondary am-btn-sm am-radius form-submit">查询</button>
+				
+				</div>
+			</div> -->
+
+		<!-- cache list start -->
+
+				<div class="am-panel am-panel-default am-radius">
+					<div class="am-panel-hd">统计</div>
+					
+					<div class="am-panel-bd">预约人数：{{$yy_sum}}人</div>
+					<div class="am-panel-bd">到访人数：{{$df_sum}}人</div>
+					<div class="am-panel-bd">签约人数：{{$qy_sum}}人</div>
+					<div class="am-panel-bd">财务统计：已付学费{{$yj_je}}元，剩余支付学费{{$sy_je}}元</div>
+
+				</div>
+
+		<!-- cache list end -->
+	</div>
+</div>
+<!-- right content end  -->
+		
+<!-- footer start -->
+<include file="Public/Footer" />
+<!-- footer end -->

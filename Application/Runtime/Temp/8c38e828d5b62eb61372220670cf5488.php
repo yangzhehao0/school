@@ -1,0 +1,3 @@
+<?php
+//000000000000a:2:{i:0;a:7:{s:2:"id";s:2:"28";s:4:"name";s:12:"学生管理";s:7:"control";s:8:"Xuesheng";s:6:"action";s:5:"Index";s:7:"is_show";s:1:"1";s:4:"icon";s:26:"am-icon-mortar-board fs-12";s:4:"item";a:1:{i:0;a:6:{s:2:"id";s:2:"29";s:4:"name";s:12:"学生列表";s:7:"control";s:8:"Xuesheng";s:6:"action";s:5:"Index";s:7:"is_show";s:1:"1";s:4:"icon";s:0:"";}}}i:1;a:7:{s:2:"id";s:3:"161";s:4:"name";s:12:"学生签到";s:7:"control";s:7:"Qiandao";s:6:"action";s:5:"Index";s:7:"is_show";s:1:"1";s:4:"icon";s:12:"am-icon-user";s:4:"item";a:1:{i:0;a:6:{s:2:"id";s:3:"162";s:4:"name";s:12:"签到列表";s:7:"control";s:7:"Qiandao";s:6:"action";s:5:"Index";s:7:"is_show";s:1:"1";s:4:"icon";s:0:"";}}}}
+?>

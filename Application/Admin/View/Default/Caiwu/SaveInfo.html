@@ -1,0 +1,104 @@
+<!-- header start -->
+<include file="Public/Header" />
+<!-- header end -->
+
+<!-- right content start  -->
+<div class="content-right">
+	<div class="content">
+		<!-- form start -->
+		<form class="am-form form-validation view-save" action="{{:U('Admin/Caiwu/Save')}}" method="POST" request-type="ajax-url" request-value="{{:U('Admin/Kehu/Index')}}">
+			<legend>
+				<span class="fs-16">
+					<if condition="empty($data['id'])">
+						{{:L('fraction_add_name')}}
+					<else />
+						{{:L('fraction_edit_name')}}
+					</if>
+				</span>
+				<a href="{{:U('Admin/Kehu/Index')}}" class="fr fs-14 m-t-5 am-icon-mail-reply"> {{:L('common_operation_back')}}</a>
+			</legend>
+			<div class="am-form-group">
+				<label>{{:L('fraction_username_text')}}</label>
+				<input type="text" placeholder="{{:L('fraction_username_text')}}" minlength="2" maxlength="16" data-validation-message="{{:L('fraction_student_username_format')}}" class="am-radius" <present name="student"> value="{{$student.username}}"</present> disabled required />
+			</div>
+			
+			<div class="am-form-group">
+				<label>{{:L('fraction_subject_text')}}</label>
+				<select name="kecheng" class="am-radius c-p" data-validation-message="{{:L('fraction_subject_format')}}" required>
+					<option value="">{{:L('common_select_can_choose')}}</option>
+					<foreach name="subject_list" item="v">
+						<option value="{{$v.name}}" <if condition="isset($data['kecheng']) and $data['kecheng'] eq $v['name']">selected</if>>{{$v.name}}</option>
+					</foreach>
+				</select>
+			</div>
+			<div class="am-form-group">
+				<label>课程时长</label>
+				<input type="number" name="kc_sc" placeholder="课程时长" pattern="{{:L('common_regex_score')}}" data-validation-message="课程时长" class="am-radius" <present name="data"> value="{{$data.kc_sc}}"</present> required />
+			</div>
+			<div class="am-form-group">
+				<label>价格</label>
+				<input type="number" name="kc_jq"  placeholder="价格" pattern="{{:L('common_regex_jiage')}}" data-validation-message="价格" class="am-radius" <present name="data"> value="{{$data.kc_jq}}"</present> required />
+			</div>
+			<div class="am-form-group">
+				<label>已付款金额</label>
+				<input type="number" name="yj_price"  placeholder="已付款金额" pattern="{{:L('common_regex_jiage')}}" data-validation-message="已付款金额" class="am-radius" <present name="data"> value="{{$data.yj_price}}"</present> required />
+			</div>
+			<div class="am-form-group">
+					<label>剩余付款金额</label>
+					<input type="number" name="sy_price"  placeholder="剩余付款金额" pattern="{{:L('common_regex_jiage')}}" data-validation-message="剩余付款金额" class="am-radius" <present name="data"> value="{{$data.sy_price}}"</present> required />
+				</div>
+			<div class="am-form-group">
+				<label>合同开始日期</label>
+				<input type="text" name="ht_start" class="am-radius" placeholder="合同开始日期" pattern="{{:L('common_regex_birthday')}}" data-validation-message="合同开始日期" <notempty name="data"> value="{{$data.ht_start}}" </notempty> data-am-datepicker="{format: 'yyyy-mm-dd', viewMode: 'years'}" readonly required />
+			</div>
+			<div class="am-form-group">
+				<label>合同结束日期</label>
+				<input type="text" name="ht_end" class="am-radius" placeholder="合同结束日期" pattern="{{:L('common_regex_birthday')}}" data-validation-message="合同结束日期" <notempty name="data"> value="{{$data.ht_start}}" </notempty> data-am-datepicker="{format: 'yyyy-mm-dd', viewMode: 'years'}" readonly required />
+			</div>
+			<div class="am-form-group">
+				<label>财务</label>
+				<select name="cw_id" class="am-radius c-p" data-validation-message="财务" required>
+					<option value="">{{:L('common_select_can_choose')}}</option>
+					<foreach name="caiwu_list" item="v">
+						<option value="{{$v.id}}" <if condition="isset($data['cw_id']) and $data['cw_id'] eq $v['id']">selected</if>>{{$v.realname}}</option>
+					</foreach>
+				</select>
+			</div>
+			<div class="am-form-group">
+				<label>合同状态</label>
+				<select name="ht_status" class="am-radius c-p" data-validation-message="合同状态" required>
+					<option value="">{{:L('common_select_can_choose')}}</option>
+					<foreach name="ht_status" item="v">
+						<option value="{{$key}}" <if condition="isset($data['ht_status']) and $data['ht_status'] eq $key">selected</if>>{{$v}}</option>
+					</foreach>
+				</select>
+			</div>
+			<div class="am-form-group">
+				<label>付款状态</label>
+				<select name="pay_status" class="am-radius c-p" data-validation-message="财务" required>
+					<option value="">{{:L('common_select_can_choose')}}</option>
+					<foreach name="pay_status" item="v">
+						<option value="{{$key}}" <if condition="isset($data['pay_status']) and $data['pay_status'] eq $key">selected</if>>{{$v}}</option>
+					</foreach>
+				</select>
+			</div>
+
+			<div class="am-form-group">
+				<label>备注</label>
+				<textarea rows="3" maxlength="255" name="beizhu" class="am-radius" placeholder="备注" data-validation-message="备注"><present name="data">{{$data.beizhu}}</present></textarea>
+			</div>
+			<div class="am-form-group">
+				<input type="hidden" name="kh_name" <present name="student"> value="{{$student.username}}"</present>">
+				<input type="hidden" name="kh_id" <present name="student"> value="{{$student.id}}"</present>" />
+				<input type="hidden" name="id" <present name="data"> value="{{$data.id}}"</present>" />
+				<button type="submit" class="am-btn am-btn-primary am-radius btn-loading-example am-btn-sm w100" data-am-loading="{loadingText:'{{:L('common_form_loading_tips')}}'}">{{:L('common_operation_save')}}</button>
+			</div>
+		</form>
+        <!-- form end -->
+	</div>
+</div>
+<!-- right content end  -->
+		
+<!-- footer start -->
+<include file="Public/Footer" />
+<!-- footer end -->

@@ -1,0 +1,68 @@
+<!-- header start -->
+<include file="Public/Header" />
+<!-- header end -->
+
+<!-- right content start  -->
+<div class="content-right">
+	<div class="content">
+		<!-- form start -->
+		<form class="am-form form-validation view-save" action="{{:U('Admin/Qiandao/Save')}}" method="POST" request-type="ajax-url" request-value="{{:U('Admin/Qiandao/Index')}}">
+			<legend>
+				<span class="fs-16">
+					<if condition="empty($data['id'])">
+						添加学生签到	
+					<else />
+						编辑学生签到
+					</if>
+				</span>
+				<a href="{{:U('Admin/Qiandao/Index')}}" class="fr fs-14 m-t-5 am-icon-mail-reply"> {{:L('common_operation_back')}}</a>
+			</legend>
+			<div class="am-form-group">
+				<label>学生姓名</label>
+				<select  class="am-radius c-p" name="uid" >
+					<option value="0">{{:L('common_select_can_choose')}}</option>
+					<foreach name="xuesheng_list" item="v">
+						<option value="{{$v.id}}" <if condition="isset($data['uid']) and $data['uid'] eq $v['id']">selected</if>>{{$v.username}}</option>
+					</foreach>
+				</select>
+			</div>
+
+			<div class="am-form-group">
+				<label>签到日期</label>
+				<input type="text" name="updatetime" class="am-radius" placeholder="签到日期" pattern="{{:L('common_regex_birthday')}}" data-validation-message="签到日期格式错误" <notempty name="data"> value="{{$data.updatetime|date='Y-m-d',###}}" </notempty> data-am-datepicker="{format: 'yyyy-mm-dd', viewMode: 'years'}" readonly required />
+			</div>
+			<div class="am-form-group">
+				<label>备注</label>
+				<input type="text" name="beizhu" class="am-radius" placeholder="备注" data-validation-message="备注" <notempty name="data"> value="{{$data.beizhu}}" </notempty>  />
+			</div>
+			
+			
+
+			<input type="hidden" name="id" <notempty name="data"> value="{{$data.id}}"</notempty> />
+
+			<div class="am-form-group">
+				<label>签到状态</label>
+				<div>
+			
+						<label class="am-radio-inline m-r-10">
+							<input type="radio" name="status" value="{{$v.status}}" <if condition="isset($data['status']) and $data['status'] eq 1">checked="checked"</if> data-am-ucheck /> 签到成功
+						</label>
+						<label class="am-radio-inline m-r-10">
+							<input type="radio" name="status" value="{{$v.status}}" <if condition="isset($data['status']) and $data['status'] eq 0">checked="checked"</if> data-am-ucheck /> 签到失败
+						</label>
+					
+				</div>
+			</div>
+			<div class="am-form-group">
+				
+				<button type="submit" class="am-btn am-btn-primary am-radius btn-loading-example am-btn-sm w100" data-am-loading="{loadingText:'{{:L('common_form_loading_tips')}}'}">{{:L('common_operation_save')}}</button>
+			</div>
+		</form>
+        <!-- form end -->
+	</div>
+</div>
+<!-- right content end  -->
+		
+<!-- footer start -->
+<include file="Public/Footer" />
+<!-- footer end -->

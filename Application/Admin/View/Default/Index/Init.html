@@ -1,0 +1,129 @@
+<!-- header start -->
+<include file="Public/Header" />
+<!-- header end -->
+
+<!-- right content start  -->
+<div class="content-right">
+	<div class="content">
+		<p class="fw-700 list-title">管理中心</p>
+		<hr>
+		<div class="am-g">
+			<div class="am-u-sm-4">
+					<div class="am-panel am-panel-primary">
+							<div class="am-panel-hd">预约提醒</div>
+							<div class="am-panel-bd">
+									<div class="am-scrollable-vertical ">
+											<table class="am-table am-table-striped am-table-hover">
+													<thead>
+														<tr>
+															<td>姓名</td>
+															<td>联系人</td>
+															<td>电话</td>
+														</tr>
+													</thead>
+													<tbody>
+														<if condition="!empty($yy_tixiang)">
+														<foreach name="yy_tixiang" item="vo">
+														<tr>
+															<td><a href="###">{{$vo.username}}</a></td> 
+															<td>{{$vo.lxr_1}}</td> 
+															<td>{{$vo.lxrtel_1}}</td>
+														</tr>
+														</foreach>
+														<else />
+														
+														<tr><td colspan="3">无</td></tr>		
+														</if>
+													</tbody>
+											</table>
+									</div>
+							</div>
+						  </div>
+					
+			</div>
+			<div class="am-u-sm-4">
+					<div class="am-panel am-panel-secondary">
+							<div class="am-panel-hd">签到提醒</div>
+							<div class="am-panel-bd">
+									<div class="am-scrollable-vertical ">
+										<div class=" am-u-sm-6">
+												<table class="am-table am-table-striped  am-table-hover " >
+														<thead>
+															<tr>
+																<td>已签到</td>
+															</tr>
+														</thead>
+														<tbody>
+															<foreach name="yqd_xs" item="vo">
+															<tr class="am-primary">
+																<td>{{$vo.username}}</td> 
+															</tr>
+															</foreach>
+	
+														</tbody>
+												</table>
+										</div>
+											<div class=" am-u-sm-6">
+													<table class="am-table am-table-striped am-table-hover">
+															<thead>
+																<tr>
+																	<td>未签到</td>
+																</tr>
+															</thead>
+															<tbody>
+																<foreach name="wqd_xs" item="vo">
+																<tr class="am-danger">
+																	<td>{{$vo.username}}</td> 
+																</tr>
+																</foreach>
+															</tbody>
+													</table>
+											</div>
+											
+									</div>
+							</div>
+						  </div>
+					
+			</div>
+			<div class="am-u-sm-4">
+					<div class="am-panel am-panel-success">
+							<div class="am-panel-hd">生日提醒</div>
+							<div class="am-panel-bd">
+									<div class="am-scrollable-vertical ">
+											<table class="am-table am-table-striped am-table-hover">
+													<thead>
+															<tr>
+																<th colspan="3">一周内学生生日提醒</th>
+																
+															</tr>
+
+													</thead>
+													<tbody>
+															<if condition="!empty($xs_shengri)">
+																	<foreach name="xs_shengri" item="v">
+																			<tr>
+																				<td ><a href="javascript:;" >{{$v.username}}</a></td>
+																				<td>{{$v.riqi}}</td>
+																				<td>星期{{$v.xingqi}}</td>
+																			</tr>
+																	</foreach>
+															<else />
+															
+															<tr><td>无</td></tr>		
+															</if>
+														</tbody>
+											</table>		
+									</div>
+							</div>
+						  </div>
+					
+			</div>
+			
+		  </div>
+	</div>
+</div>
+<!-- right content end  -->
+
+<!-- footer start -->
+<include file="Public/Footer" />
+<!-- footer end -->

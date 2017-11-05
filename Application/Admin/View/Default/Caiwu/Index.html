@@ -1,0 +1,128 @@
+<!-- header start -->
+<include file="Public/Header" />
+<!-- header end -->
+
+<!-- right content start  -->
+<div class="content-right">
+	<div class="content">
+		<!-- form start -->
+		<form class="am-form view-list" action="{{:U('Admin/Caiwu/Index')}}" method="POST">
+			<div class="am-g">
+				<input type="text" class="am-radius form-keyword" placeholder="姓名" name="keyword" <present name="param['keyword']"> value="{{$param.keyword}}"</present> />
+				<button type="submit" class="am-btn am-btn-secondary am-btn-sm am-radius form-submit">{{:L('common_operation_query')}}</button>
+				<label class="fs-12 m-l-5 c-p fw-100 more-submit">
+					{{:L('common_more_screening')}}
+					<input type="checkbox" name="is_more" value="1" id="is_more" <if condition="isset($param['is_more']) and $param['is_more'] eq 1">checked</if> />
+					<i class="am-icon-angle-down"></i>
+				</label>
+
+				<div class="more-where <if condition="!isset($param['is_more']) or $param['is_more'] neq 1">none</if>">
+					
+					<select  class="am-radius c-p m-t-10" name="pay_status">
+						<option value="-1">付费状态</option>
+						<foreach name="pay_status_arr" item="v">
+							<option value="{{$key}}" <if condition="isset($param['pay_status']) and $param['pay_status'] eq $ey">selected</if>>{{$v}}</option>
+						</foreach>
+					</select>
+					<select  class="am-radius c-p m-t-10" name="kecheng">
+						<option value="0">{{:L('fraction_subject_text')}}</option>
+						<foreach name="subject_list" item="v">
+							<option value="{{$v.name}}" <if condition="isset($param['kecheng']) and $param['kecheng'] eq $v['name']">selected</if>>{{$v.name}}</option>
+						</foreach>
+					</select>
+					<select name="ht_status" class="am-radius c-p m-t-10">
+						<option value="-1">合同状态</option>
+						<foreach name="ht_status_arr" item="v">
+							<option value="{{$key}}" <if condition="isset($param['ht_status']) and $param['ht_status'] eq $key">selected</if>>{{$v}}</option>
+						</foreach>
+					</select>
+					<div class="param-date param-where m-l-5">
+						<input type="text" name="time_start" readonly="readonly" class="am-radius m-t-10" placeholder="合同开始" id="time_start">
+						<span>~</span>
+						<input type="text" readonly="readonly" class="am-radius m-t-10" placeholder="合同结束" name="time_end" id="time_end">
+					</div>
+				</div>
+			</div>
+		</form>
+		<!-- form end -->
+
+		<!-- operation start -->
+		<if condition="!IsMobile()">
+	        <div class="am-g m-t-15">
+	            <a href="{{$excel_url}}" class="am-btn am-btn-success am-btn-xs am-icon-file-excel-o am-radius"> {{:L('common_operation_excel_export_name')}}</a>
+	            <!-- <a href="javascript:;" class="am-btn am-btn-primary am-btn-xs m-l-10 am-icon-cloud-upload am-radius" data-am-modal="{target: '#excel-import-win'}"> {{:L('common_operation_excel_import_name')}}</a> -->
+            	<!-- excel win html start -->
+				
+				<!-- excel win html end -->
+	        </div>
+	    </if>
+        <!-- operation end -->
+
+		<!-- list start -->
+		<table class="am-table am-table-striped am-table-hover am-text-middle m-t-20">
+			<thead>
+				<tr>
+					<th>合同编号</th>
+					<th>{{:L('fraction_username_text')}}</th>
+					<th class="am-hide-sm-only">课程</th>
+					<th class="am-hide-sm-only">应付金额</th>
+					<th class="am-hide-sm-only">已付金额</th>
+					<th class="am-hide-sm-only">剩付金额</th>
+					<th class="am-hide-sm-only">合同状态</th>
+					<th>课时</th>
+					<th>合同结束日期</th>
+					<th>更新时间</th>
+					<th>{{:L('common_operation_name')}}</th>
+				</tr>
+			</thead>
+			<tbody>
+				<if condition="!empty($list)">
+					<foreach name="list" item="v">
+						<tr id="data-list-{{$v.id}}-{{$v.student_id}}">
+							<td>{{$v.id}}</td>
+							<td>{{$v.username}}</td>
+							<td class="am-hide-sm-only">{{$v.kecheng}}</td>
+							<td class="am-hide-sm-only">{{$v.price}}</td>
+							<td class="am-hide-sm-only">{{$v.yj_price}}</td>
+							<td class="am-hide-sm-only">{{$v.sy_price}}</td>
+							<td class="am-hide-sm-only">{{$v.ht_status}}</td>
+							<td class="am-hide-sm-only">{{$v.kc_sc}}</td>
+							<td>{{$v.ht_end}}</td>
+							<td>{{$v.updatetime}}</td>
+							
+							<td>
+								<a href="{{:U('Admin/Xuesheng/SaveInfo', array('kh_id'=>$v['kh_id']))}}">
+									<button class="am-btn am-btn-default am-btn-xs am-radius am-icon-mortar-board" data-am-popover="{content: '生成学生资料', trigger: 'hover focus'}"></button>
+								</a>
+								<a href="{{:U('Admin/Caiwu/SaveInfo', array('id'=>$v['kh_id']))}}">
+									<button class="am-btn am-btn-default am-btn-xs am-radius am-icon-edit" data-am-popover="{content: '{{:L('common_operation_edit')}}', trigger: 'hover focus'}"></button>
+								</a>
+								<button class="am-btn am-btn-default am-btn-xs am-radius am-icon-trash-o submit-delete" data-url="{{:U('Admin/Caiwu/Delete')}}" data-am-popover="{content: '{{:L('common_operation_delete')}}', trigger: 'hover focus'}" data-id="{{$v.id}}"></button>
+							</td>
+						</tr>
+					</foreach>
+				<else />
+					<tr><td colspan="10" class="table-no">{{:L('common_not_data_tips')}}</td></tr>
+				</if>
+			</tbody>
+		</table>
+		<!-- list end -->
+
+		<!-- page start -->
+		<if condition="!empty($list)">
+			{{$page_html}}
+		</if>
+		<!-- page end -->
+	</div>
+</div>
+<!-- right content end  -->
+		
+<!-- footer start -->
+<include file="Public/Footer" />
+<!-- footer end -->
+
+<if condition="!IsMobile()">
+	<!-- excel win js start -->
+	<include file="Lib/ExcelWinJs" />
+	<!-- excel win js end -->
+</if>

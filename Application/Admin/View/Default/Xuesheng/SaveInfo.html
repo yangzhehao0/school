@@ -1,0 +1,106 @@
+<!-- header start -->
+<include file="Public/Header" />
+<!-- header end -->
+
+<!-- right content start  -->
+<div class="content-right">
+	<div class="content">
+		<!-- form start -->
+		<form class="am-form form-validation view-save" action="{{:U('Admin/Xuesheng/Save')}}" method="POST" request-type="ajax-url" request-value="{{:U('Admin/Xuesheng/Index')}}">
+			<legend>
+				<span class="fs-16">
+					<if condition="empty($data['id'])">
+						添加学生	
+					<else />
+						编辑学生
+					</if>
+				</span>
+				<a href="{{:U('Admin/Kehu/Index')}}" class="fr fs-14 m-t-5 am-icon-mail-reply"> {{:L('common_operation_back')}}</a>
+			</legend>
+			<div class="am-form-group">
+				<label>{{:L('student_username_text')}}</label>
+				<input type="text" name="username" placeholder="{{:L('student_username_text')}}" minlength="2" maxlength="16" data-validation-message="{{:L('student_username_format')}}" class="am-radius" <notempty name="data"> value="{{$data.username}}"</notempty> required />
+			</div>
+
+			
+			<include file="Lib/Gender" />
+
+			<div class="am-form-group">
+				<label>{{:L('student_birthday_text')}}</label>
+				<input type="text" name="birthday" class="am-radius" placeholder="{{:L('student_birthday_text')}}" pattern="{{:L('common_regex_birthday')}}" data-validation-message="{{:L('student_birthday_format')}}" <notempty name="data"> value="{{$data.birthday}}" </notempty> data-am-datepicker="{format: 'yyyy-mm-dd', viewMode: 'years'}" readonly required />
+			</div>
+			<div class="am-form-group">
+				<label>联系人姓名</label>
+				<input type="text" name="lxr_1" class="am-radius" placeholder="联系人姓名" data-validation-message="联系人姓名" <notempty name="data"> value="{{$data.lxr_1}}" </notempty> required />
+			</div>
+			<div class="am-form-group">
+				<label>联系人电话</label>
+				<input type="text" name="lxrtel_1" class="am-radius" placeholder="联系人电话" data-validation-message="联系人电话" <notempty name="data"> value="{{$data.lxrtel_1}}" </notempty> required />
+			</div>
+			<div class="am-form-group">
+				<label>联系人姓名2</label>
+				<input type="text" name="lxr_2" class="am-radius" placeholder="联系人姓名" data-validation-message="联系人姓名" <notempty name="data"> value="{{$data.lxr_2}}" </notempty>  />
+			</div>
+			<div class="am-form-group">
+				<label>联系人电话2</label>
+				<input type="text" name="lxrtel_2" class="am-radius" placeholder="联系人电话" data-validation-message="联系人电话" <notempty name="data"> value="{{$data.lxrtel_2}}" </notempty>  />
+			</div>
+			<div class="am-form-group">
+				<label>课程</label>
+				<select  class="am-radius c-p" name="kecheng" >
+					<option value="0">{{:L('common_select_can_choose')}}</option>
+					<foreach name="kecheng" item="v">
+						<option value="{{$v.name}}" <if condition="isset($data['kecheng']) and $data['kecheng'] eq $v['name']">selected</if>>{{$v.name}}</option>
+					</foreach>
+				</select>
+			</div>
+			<div class="am-form-group">
+				<label>课程顾问</label>
+				<select  class="am-radius c-p" name="gw_id" >
+					<option value="0">{{:L('common_select_can_choose')}}</option>
+					<foreach name="guwen" item="v">
+						<option value="{{$v.id}}" <if condition="isset($data['gw_id']) and $data['gw_id'] eq $v['id']">selected</if>>{{$v.realname}}</option>
+					</foreach>
+				</select>
+			</div>
+			<div class="am-form-group">
+				<label>授课老师</label>
+				<select  class="am-radius c-p" name="ls_id" >
+					<option value="0">{{:L('common_select_can_choose')}}</option>
+					<foreach name="laoshi" item="v">
+						<option value="{{$v.id}}" <if condition="isset($data['ls_id']) and $data['ls_id'] eq $v['id']">selected</if>>{{$v.realname}}</option>
+					</foreach>
+				</select>
+			</div>
+			<div class="am-form-group">
+				<label>课程时长</label>
+				<input type="text" name="kc_sc" class="am-radius" placeholder="课程时长" data-validation-message="课程时长" <notempty name="data"> value="{{$data.kc_sc}}" </notempty>  />
+			</div>
+			
+
+			<input type="hidden" name="id" <notempty name="data"> value="{{$data.id}}"</notempty> />
+			<input type="hidden" name="kh_id" <notempty name="data"> value="{{$data.kh_id}}"</notempty> />
+			<input type="hidden" name="cw_id" <notempty name="data"> value="{{$data.cw_id}}"</notempty> />
+			<!-- <div class="am-form-group">
+				<label>{{:L('student_tuition_state_text')}}</label>
+				<div>
+					<foreach name="common_tuition_state_list" item="v">
+						<label class="am-radio-inline m-r-10">
+							<input type="radio" name="tuition_state" value="{{$v.id}}" <if condition="isset($data['tuition_state']) and $data['tuition_state'] eq $v['id']">checked="checked"<else /><if condition="!isset($data['tuition_state']) and isset($v['checked']) and $v['checked'] eq true">checked="checked"</if></if> data-am-ucheck /> {{$v.name}}
+						</label>
+					</foreach>
+				</div> -->
+			</div>
+			<div class="am-form-group">
+				
+				<button type="submit" class="am-btn am-btn-primary am-radius btn-loading-example am-btn-sm w100" data-am-loading="{loadingText:'{{:L('common_form_loading_tips')}}'}">{{:L('common_operation_save')}}</button>
+			</div>
+		</form>
+        <!-- form end -->
+	</div>
+</div>
+<!-- right content end  -->
+		
+<!-- footer start -->
+<include file="Public/Footer" />
+<!-- footer end -->

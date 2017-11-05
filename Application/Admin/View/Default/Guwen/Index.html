@@ -1,0 +1,181 @@
+<!-- header start -->
+<include file="Public/Header" />
+<!-- header end -->
+
+<!-- right content start  -->
+<div class="content-right">
+	<div class="content">
+		<!-- form start -->
+		<form class="am-form view-list" action="{{:U('Admin/Student/Index')}}" method="POST">
+			<div class="am-g">
+				<input type="text" class="am-radius form-keyword" placeholder="姓名/手机" name="keyword" />
+				<button type="submit" class="am-btn am-btn-secondary am-btn-sm am-radius form-submit">查询</button>
+				<label class="fs-12 m-l-5 c-p fw-100 more-submit">
+					更多筛选					<input type="checkbox" name="is_more" value="1" id="is_more">
+					<i class="am-icon-angle-down"></i>
+				</label>
+
+				<div class="more-where none">
+					<select class="am-radius c-p m-t-10 m-l-5 param-where" name="region_id">
+						<option value="0">地区</option>
+						<option value="7">谯家镇2</option><option value="8">印山村2</option><option value="9">康家坨</option><option value="11">水进湾</option><option value="12">小垫矮</option><option value="14">麻池</option><option value="15">并蛋鸭</option><option value="17">试试水</option><option value="18">时代复分</option><option value="19">的方法发</option><option value="20">sdfsd</option><option value="21">鲁竹坝</option><option value="22">熊家岩</option><option value="23">洞下槽</option><option value="24">蓼叶村</option><option value="25">张家槽</option>					</select>
+					<select name="class_id" class="am-radius c-p m-t-10 m-l-5 param-where">
+						<option value="0">班级</option>
+														<optgroup label="一年级">
+									<option value="17">一班</option><option value="18">二班</option><option value="22">NickName</option>								</optgroup>								<optgroup label="二年级">
+									<option value="16">三年级</option><option value="19">天才班</option><option value="20">优秀班</option><option value="21">普通班</option>								</optgroup><option value="23">好班级</option>
+															<optgroup label="九年级">
+									<option value="26">三班</option>								</optgroup>					</select>
+					<select name="state" class="am-radius c-p m-t-10 m-l-5 param-where">
+						<option value="-1">学生状态</option>
+						<option value="0">待入学</option><option value="1">在读</option><option value="2">已毕业</option><option value="3">弃学</option><option value="4">已开除</option>					</select>
+					<select name="tuition_state" class="am-radius c-p m-t-10 m-l-5 param-where">
+						<option value="-1">缴费状态</option>
+						<option value="0">待缴费</option><option value="1">已缴费</option>					</select>
+					<select name="gender" class="am-radius c-p m-t-10 m-l-5 param-where">
+						<option value="-1">性别</option>
+						<option value="0">保密</option><option value="1">女</option><option value="2">男</option>					</select>
+					<div class="param-date param-where m-l-5">
+						<input type="text" name="time_start" readonly="readonly" class="am-radius m-t-10" placeholder="出生开始" id="time_start">
+						<span>~</span>
+						<input type="text" readonly="readonly" class="am-radius m-t-10" placeholder="出生结束" name="time_end" id="time_end">
+					</div>
+				</div>
+			</div>
+        </form>
+        <!-- form end -->
+
+        <!-- operation start -->
+        <div class="am-g m-t-15">
+            <a href="{{:U('Admin/Student/SaveInfo')}}" class="am-btn am-btn-secondary am-radius am-btn-xs am-icon-plus"> {{:L('common_operation_add')}}</a>
+            <if condition="!IsMobile()">
+            	<a href="{{$excel_url}}" class="am-btn am-btn-success am-btn-xs m-l-10 am-icon-file-excel-o am-radius"> {{:L('common_operation_excel_export_name')}}</a>
+            	<a href="javascript:;" class="am-btn am-btn-primary am-btn-xs m-l-10 am-icon-cloud-upload am-radius" data-am-modal="{target: '#excel-import-win'}"> {{:L('common_operation_excel_import_name')}}</a>
+            	<!-- excel win html start -->
+				<include file="Lib/ExcelWinHtml" />
+				<!-- excel win html end -->
+            </if>
+        </div>
+        <!-- operation end -->
+
+		<!-- list start -->
+		<table class="am-table am-table-striped am-table-hover am-text-middle m-t-10 m-l-5">
+			<thead>
+				<tr>
+					<th>日期</th>
+					<th>姓名</th>
+					<th class="am-hide-sm-only">年龄</th>
+					<th>性别</th>
+					<th class="am-hide-sm-only">电话</th>
+					<th class="am-hide-sm-only">咨询课程</th>
+					<th>{{:L('common_more_name')}}</th>
+					<th>{{:L('common_operation_name')}}</th>
+				</tr>
+			</thead>
+			<tbody>
+				<if condition="!empty($list)">
+					<foreach name="list" item="v">
+						<tr id="data-list-{{$v.id}}-{{$v.id_card}}">
+							<td>201701011010</td>
+							<td class="am-hide-sm-only">张三</td>
+							<td>21</td>
+							<td class="am-hide-sm-only">男</td>
+							<td class="am-hide-sm-only">18811112222</td>
+							<td class="am-hide-sm-only">数学</td>
+							<td class="am-hide-sm-only">数学</td>
+							<!--<td>
+								<span class="am-icon-caret-down c-p" data-am-modal="{target: '#my-popup{{$v.id}}'}"> {{:L('common_see_more_name')}}</span>
+								<div class="am-popup am-radius" id="my-popup{{$v.id}}">
+									<div class="am-popup-inner">
+										<div class="am-popup-hd">
+											<h4 class="am-popup-title">{{:L('common_detail_content')}}</h4>
+											<span data-am-modal-close class="am-close">&times;</span>
+										</div>
+										<div class="am-popup-bd">
+											<dl class="dl-content">
+												<dt>{{:L('student_username_name')}}</dt>
+												<dd>{{$v.username}}</dd>
+
+												<dt>{{:L('common_view_student_number_text')}}</dt>
+												<dd>{{$v.number}}</dd>
+
+												<dt>{{:L('common_view_id_card_text')}}</dt>
+												<dd>{{$v.id_card}}</dd>
+
+												<dt>{{:L('common_address_text')}}</dt>
+												<dd>{{$v.region_name}} {{$v.address}}</dd>
+
+												<dt>{{:L('common_view_gender_name')}}</dt>
+												<dd>{{$v.gender}}</dd>
+
+												<dt>{{:L('student_birthday_text')}}</dt>
+												<dd>{{$v.birthday}}</dd>
+
+												<dt>{{:L('common_view_tel_name')}}</dt>
+												<dd>{{$v.tel}}</dd>
+
+												<dt>{{:L('student_my_mobile_name')}}</dt>
+												<dd>{{$v.my_mobile}}</dd>
+
+												<dt>{{:L('common_view_parent_mobile_name')}}</dt>
+												<dd>{{$v.parent_mobile}}</dd>
+
+												<dt>{{:L('common_email_name')}}</dt>
+												<dd>{{$v.email}}</dd>
+
+												<dt>{{:L('student_class_text')}}</dt>
+												<dd>{{$v.class_name}}</dd>
+
+												<dt>{{:L('student_tuition_state_text')}}</dt>
+												<dd>{{$v.tuition_state}}</dd>
+
+												<dt>{{:L('common_view_student_state_name')}}</dt>
+												<dd>{{$v.state}}</dd>
+
+												<dt>{{:L('student_sign_up_name')}}</dt>
+												<dd>{{$v.add_time}}</dd>
+
+												<dt>{{:L('common_upd_time_name')}}</dt>
+												<dd>{{$v.upd_time}}</dd>
+											</dl>
+										</div>
+									</div>
+								</div>
+							</td>-->
+
+							<td class="view-operation">
+								<a href="{{:U('Admin/Fraction/SaveInfo', array('id'=>$v['id']))}}">
+									<button class="am-btn am-btn-default am-btn-xs am-radius am-icon-line-chart" data-am-popover="{content: '{{:L('common_operation_fraction')}}', trigger: 'hover focus'}"></button>
+								</a>
+								<a href="{{:U('Admin/Guwen/SaveInfo', array('id'=>$v['id']))}}">
+									<button class="am-btn am-btn-default am-btn-xs am-radius am-icon-edit" data-am-popover="{content: '{{:L('common_operation_edit')}}', trigger: 'hover focus'}"></button>
+								</a>
+								<button class="am-btn am-btn-default am-btn-xs am-radius am-icon-trash-o submit-delete" data-url="{{:U('Admin/Student/Delete')}}" data-am-popover="{content: '{{:L('common_operation_delete')}}', trigger: 'hover focus'}" data-id="{{$v.id}}-{{$v.id_card}}"></button>
+							</td>
+						</tr>
+					</foreach>
+				<else />
+					<tr><td colspan="10" class="table-no">{{:L('common_not_data_tips')}}</td></tr>
+				</if>
+			</tbody>
+		</table>
+		<!-- list end -->
+
+		<!-- page start -->
+		<if condition="!empty($list)">
+			{{$page_html}}
+		</if>
+		<!-- page end -->
+	</div>
+</div>
+<!-- right content end  -->
+		
+<!-- footer start -->
+<include file="Public/Footer" />
+<!-- footer end -->
+
+<if condition="!IsMobile()">
+	<!-- excel win js start -->
+	<include file="Lib/ExcelWinJs" />
+	<!-- excel win js end -->
+</if>

@@ -1,0 +1,716 @@
+[ 2017-10-28T17:15:41+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Kehu&a=chakan_genjin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000396s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003674s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004386s ]
+NOTIC: [8] Undefined variable: list /Library/WebServer/Documents/school/Application/Admin/Controller/CommonController.class.php 第 247 行.
+NOTIC: [8] Use of undefined constant 无 - assumed '无' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 743 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000696s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000755s ]
+
+[ 2017-10-28T17:15:46+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Kehu&a=chakan_genjin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003184s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+NOTIC: [8] Undefined variable: list /Library/WebServer/Documents/school/Application/Admin/Controller/CommonController.class.php 第 247 行.
+NOTIC: [8] Use of undefined constant 无 - assumed '无' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 743 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000517s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000570s ]
+
+[ 2017-10-28T17:15:52+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Kehu&a=chakan_genjin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000403s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003452s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004186s ]
+NOTIC: [8] Undefined variable: list /Library/WebServer/Documents/school/Application/Admin/Controller/CommonController.class.php 第 247 行.
+NOTIC: [8] Use of undefined constant 无 - assumed '无' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 743 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000526s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000580s ]
+
+[ 2017-10-28T17:15:54+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Kehu&a=chakan_genjin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000381s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004071s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004761s ]
+NOTIC: [8] Undefined variable: list /Library/WebServer/Documents/school/Application/Admin/Controller/CommonController.class.php 第 247 行.
+NOTIC: [8] Use of undefined constant 无 - assumed '无' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 743 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000524s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000577s ]
+
+[ 2017-10-28T20:09:20+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Admin&a=Login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000766s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003981s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005148s ]
+NOTIC: [8] Undefined index: admin /Library/WebServer/Documents/school/Application/Admin/Controller/CommonController.class.php 第 230 行.
+NOTIC: [8] Undefined variable: list /Library/WebServer/Documents/school/Application/Admin/Controller/CommonController.class.php 第 247 行.
+NOTIC: [8] Undefined index: admin /Library/WebServer/Documents/school/Application/Admin/Controller/CommonController.class.php 第 249 行.
+NOTIC: [8] Undefined index: tx /Library/WebServer/Documents/school/Application/Admin/Controller/CommonController.class.php 第 140 行.
+NOTIC: [8] Undefined index: validate /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+
+[ 2017-10-28T20:09:22+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Admin&a=update_tixiang
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000653s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005602s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006675s ]
+NOTIC: [8] Undefined variable: list /Library/WebServer/Documents/school/Application/Admin/Controller/CommonController.class.php 第 247 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000604s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000672s ]
+
+[ 2017-10-28T20:24:46+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Admin&a=Login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000446s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004984s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005832s ]
+NOTIC: [8] Undefined index: admin /Library/WebServer/Documents/school/Application/Admin/Controller/CommonController.class.php 第 230 行.
+NOTIC: [8] Undefined variable: list /Library/WebServer/Documents/school/Application/Admin/Controller/CommonController.class.php 第 247 行.
+NOTIC: [8] Undefined index: admin /Library/WebServer/Documents/school/Application/Admin/Controller/CommonController.class.php 第 249 行.
+NOTIC: [8] Undefined index: tx /Library/WebServer/Documents/school/Application/Admin/Controller/CommonController.class.php 第 140 行.
+NOTIC: [8] Undefined index: validate /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+
+[ 2017-10-28T20:24:48+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Admin&a=update_tixiang
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000456s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004559s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005435s ]
+NOTIC: [8] Undefined variable: list /Library/WebServer/Documents/school/Application/Admin/Controller/CommonController.class.php 第 247 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000527s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000579s ]
+
+[ 2017-10-28T20:30:44+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Kehu&a=chakan_genjin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000418s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003150s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003871s ]
+NOTIC: [8] Undefined variable: list /Library/WebServer/Documents/school/Application/Admin/Controller/CommonController.class.php 第 247 行.
+NOTIC: [8] Use of undefined constant 无 - assumed '无' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 743 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000516s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000571s ]
+
+[ 2017-10-28T20:30:46+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Kehu&a=chakan_genjin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000393s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003983s ]
+NOTIC: [8] Undefined variable: list /Library/WebServer/Documents/school/Application/Admin/Controller/CommonController.class.php 第 247 行.
+NOTIC: [8] Use of undefined constant 无 - assumed '无' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 743 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000653s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000725s ]
+
+[ 2017-10-28T20:30:48+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Kehu&a=chakan_genjin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000383s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003100s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003781s ]
+NOTIC: [8] Undefined variable: list /Library/WebServer/Documents/school/Application/Admin/Controller/CommonController.class.php 第 247 行.
+NOTIC: [8] Use of undefined constant 无 - assumed '无' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 743 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000517s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000570s ]
+
+[ 2017-10-28T20:30:49+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Kehu&a=chakan_genjin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003247s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003977s ]
+NOTIC: [8] Undefined variable: list /Library/WebServer/Documents/school/Application/Admin/Controller/CommonController.class.php 第 247 行.
+NOTIC: [8] Use of undefined constant 无 - assumed '无' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 743 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000568s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000627s ]
+
+[ 2017-10-28T20:30:51+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Kehu&a=chakan_genjin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000718s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003418s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004479s ]
+NOTIC: [8] Undefined variable: list /Library/WebServer/Documents/school/Application/Admin/Controller/CommonController.class.php 第 247 行.
+NOTIC: [8] Use of undefined constant 无 - assumed '无' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 743 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000528s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000582s ]
+
+[ 2017-10-28T20:30:54+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Kehu&a=chakan_genjin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000394s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003794s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004633s ]
+NOTIC: [8] Undefined variable: list /Library/WebServer/Documents/school/Application/Admin/Controller/CommonController.class.php 第 247 行.
+NOTIC: [8] Use of undefined constant addtime - assumed 'addtime' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 735 行.
+NOTIC: [8] Use of undefined constant userid - assumed 'userid' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 736 行.
+NOTIC: [8] Use of undefined constant content - assumed 'content' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 739 行.
+NOTIC: [8] Use of undefined constant addtime - assumed 'addtime' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 735 行.
+NOTIC: [8] Use of undefined constant userid - assumed 'userid' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 736 行.
+NOTIC: [8] Use of undefined constant content - assumed 'content' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 739 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000544s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000597s ]
+
+[ 2017-10-28T20:31:02+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Kehu&a=chakan_genjin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000403s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003191s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003953s ]
+NOTIC: [8] Undefined variable: list /Library/WebServer/Documents/school/Application/Admin/Controller/CommonController.class.php 第 247 行.
+NOTIC: [8] Use of undefined constant addtime - assumed 'addtime' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 735 行.
+NOTIC: [8] Use of undefined constant userid - assumed 'userid' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 736 行.
+NOTIC: [8] Use of undefined constant content - assumed 'content' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 739 行.
+NOTIC: [8] Use of undefined constant addtime - assumed 'addtime' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 735 行.
+NOTIC: [8] Use of undefined constant userid - assumed 'userid' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 736 行.
+NOTIC: [8] Use of undefined constant content - assumed 'content' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 739 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000543s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000597s ]
+
+[ 2017-10-28T20:31:21+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Kehu&a=chakan_genjin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000405s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005798s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006568s ]
+NOTIC: [8] Undefined variable: list /Library/WebServer/Documents/school/Application/Admin/Controller/CommonController.class.php 第 247 行.
+NOTIC: [8] Use of undefined constant addtime - assumed 'addtime' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 735 行.
+NOTIC: [8] Use of undefined constant userid - assumed 'userid' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 736 行.
+NOTIC: [8] Use of undefined constant content - assumed 'content' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 739 行.
+NOTIC: [8] Use of undefined constant addtime - assumed 'addtime' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 735 行.
+NOTIC: [8] Use of undefined constant userid - assumed 'userid' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 736 行.
+NOTIC: [8] Use of undefined constant content - assumed 'content' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 739 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000771s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000832s ]
+
+[ 2017-10-28T20:45:03+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Kehu&a=chakan_genjin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000393s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003126s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003829s ]
+NOTIC: [8] Undefined variable: list /Library/WebServer/Documents/school/Application/Admin/Controller/CommonController.class.php 第 247 行.
+NOTIC: [8] Use of undefined constant 无 - assumed '无' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 751 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000523s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000573s ]
+
+[ 2017-10-28T20:45:17+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Admin&a=Login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000379s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003576s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004275s ]
+NOTIC: [8] Undefined index: admin /Library/WebServer/Documents/school/Application/Admin/Controller/CommonController.class.php 第 230 行.
+NOTIC: [8] Undefined variable: list /Library/WebServer/Documents/school/Application/Admin/Controller/CommonController.class.php 第 247 行.
+NOTIC: [8] Undefined index: admin /Library/WebServer/Documents/school/Application/Admin/Controller/CommonController.class.php 第 249 行.
+NOTIC: [8] Undefined index: tx /Library/WebServer/Documents/school/Application/Admin/Controller/CommonController.class.php 第 140 行.
+NOTIC: [8] Undefined index: validate /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+
+[ 2017-10-28T20:45:22+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Admin&a=update_tixiang
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000560s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005419s ]
+NOTIC: [8] Undefined variable: list /Library/WebServer/Documents/school/Application/Admin/Controller/CommonController.class.php 第 247 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009391s ]
+
+[ 2017-10-28T20:45:29+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Kehu&a=chakan_genjin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003188s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003881s ]
+NOTIC: [8] Undefined variable: list /Library/WebServer/Documents/school/Application/Admin/Controller/CommonController.class.php 第 247 行.
+NOTIC: [8] Use of undefined constant 无 - assumed '无' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 751 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000571s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000626s ]
+
+[ 2017-10-28T20:45:33+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Kehu&a=xinzeng_genjin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000427s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004476s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005250s ]
+NOTIC: [8] Undefined variable: list /Library/WebServer/Documents/school/Application/Admin/Controller/CommonController.class.php 第 247 行.
+NOTIC: [8] Undefined index: validate /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+
+[ 2017-10-28T20:45:35+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Kehu&a=chakan_genjin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000405s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004106s ]
+NOTIC: [8] Undefined variable: list /Library/WebServer/Documents/school/Application/Admin/Controller/CommonController.class.php 第 247 行.
+NOTIC: [8] Use of undefined constant addtime - assumed 'addtime' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 743 行.
+NOTIC: [8] Use of undefined constant userid - assumed 'userid' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 744 行.
+NOTIC: [8] Use of undefined constant content - assumed 'content' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 747 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000547s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000599s ]
+
+[ 2017-10-28T20:45:52+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Kehu&a=Save
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000445s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003633s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004471s ]
+NOTIC: [8] Undefined variable: list /Library/WebServer/Documents/school/Application/Admin/Controller/CommonController.class.php 第 247 行.
+NOTIC: [8] Undefined index: validate /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+ERR: 1364:Field 'userid' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `sc_genjin` (`khid`,`addtime`,`content`) VALUES ('9','1509194752','更新状态为预约')
+
+[ 2017-10-28T20:45:55+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Kehu&a=chakan_genjin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000446s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003227s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004160s ]
+NOTIC: [8] Undefined variable: list /Library/WebServer/Documents/school/Application/Admin/Controller/CommonController.class.php 第 247 行.
+NOTIC: [8] Use of undefined constant addtime - assumed 'addtime' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 743 行.
+NOTIC: [8] Use of undefined constant userid - assumed 'userid' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 744 行.
+NOTIC: [8] Use of undefined constant content - assumed 'content' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 747 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000526s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000576s ]
+
+[ 2017-10-28T20:46:47+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Kehu&a=Save
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001070s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003735s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005212s ]
+NOTIC: [8] Undefined variable: list /Library/WebServer/Documents/school/Application/Admin/Controller/CommonController.class.php 第 247 行.
+NOTIC: [8] Undefined index: validate /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+
+[ 2017-10-28T20:46:51+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Kehu&a=Save
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000417s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.007052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007836s ]
+NOTIC: [8] Undefined variable: list /Library/WebServer/Documents/school/Application/Admin/Controller/CommonController.class.php 第 247 行.
+NOTIC: [8] Undefined index: validate /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+
+[ 2017-10-28T20:47:44+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Kehu&a=Save
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007735s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.007323s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015494s ]
+NOTIC: [8] Undefined variable: list /Library/WebServer/Documents/school/Application/Admin/Controller/CommonController.class.php 第 247 行.
+NOTIC: [8] Undefined index: validate /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+
+[ 2017-10-28T20:47:46+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Kehu&a=chakan_genjin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000436s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004311s ]
+NOTIC: [8] Undefined variable: list /Library/WebServer/Documents/school/Application/Admin/Controller/CommonController.class.php 第 247 行.
+NOTIC: [8] Use of undefined constant addtime - assumed 'addtime' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 744 行.
+NOTIC: [8] Use of undefined constant userid - assumed 'userid' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 745 行.
+NOTIC: [8] Use of undefined constant content - assumed 'content' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 748 行.
+NOTIC: [8] Use of undefined constant addtime - assumed 'addtime' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 744 行.
+NOTIC: [8] Use of undefined constant userid - assumed 'userid' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 745 行.
+NOTIC: [8] Use of undefined constant content - assumed 'content' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 748 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000530s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000581s ]
+
+[ 2017-10-28T20:48:12+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Kehu&a=chakan_genjin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004455s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003528s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009063s ]
+NOTIC: [8] Undefined variable: list /Library/WebServer/Documents/school/Application/Admin/Controller/CommonController.class.php 第 247 行.
+NOTIC: [8] Use of undefined constant addtime - assumed 'addtime' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 744 行.
+NOTIC: [8] Use of undefined constant userid - assumed 'userid' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 745 行.
+NOTIC: [8] Use of undefined constant content - assumed 'content' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 748 行.
+NOTIC: [8] Use of undefined constant addtime - assumed 'addtime' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 744 行.
+NOTIC: [8] Use of undefined constant userid - assumed 'userid' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 745 行.
+NOTIC: [8] Use of undefined constant content - assumed 'content' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 748 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000533s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000583s ]
+
+[ 2017-10-28T20:51:54+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Kehu&a=Save
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000448s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004189s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005090s ]
+NOTIC: [8] Undefined variable: list /Library/WebServer/Documents/school/Application/Admin/Controller/CommonController.class.php 第 247 行.
+NOTIC: [8] Undefined index: validate /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+
+[ 2017-10-28T20:55:02+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Kehu&a=Save
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.016031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017407s ]
+NOTIC: [8] Undefined variable: list /Library/WebServer/Documents/school/Application/Admin/Controller/CommonController.class.php 第 247 行.
+NOTIC: [8] Undefined index: validate /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+
+[ 2017-10-28T20:56:20+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Kehu&a=Save
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000454s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005836s ]
+NOTIC: [8] Undefined variable: list /Library/WebServer/Documents/school/Application/Admin/Controller/CommonController.class.php 第 247 行.
+NOTIC: [8] Undefined index: validate /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+
+[ 2017-10-28T20:56:22+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Kehu&a=chakan_genjin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.010697s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011919s ]
+NOTIC: [8] Undefined variable: list /Library/WebServer/Documents/school/Application/Admin/Controller/CommonController.class.php 第 247 行.
+NOTIC: [8] Use of undefined constant addtime - assumed 'addtime' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 744 行.
+NOTIC: [8] Use of undefined constant userid - assumed 'userid' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 745 行.
+NOTIC: [8] Use of undefined constant content - assumed 'content' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 748 行.
+NOTIC: [8] Use of undefined constant addtime - assumed 'addtime' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 744 行.
+NOTIC: [8] Use of undefined constant userid - assumed 'userid' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 745 行.
+NOTIC: [8] Use of undefined constant content - assumed 'content' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 748 行.
+NOTIC: [8] Use of undefined constant addtime - assumed 'addtime' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 744 行.
+NOTIC: [8] Use of undefined constant userid - assumed 'userid' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 745 行.
+NOTIC: [8] Use of undefined constant content - assumed 'content' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 748 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000546s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000597s ]
+
+[ 2017-10-28T20:59:25+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Kehu&a=chakan_genjin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000499s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004435s ]
+NOTIC: [8] Undefined variable: list /Library/WebServer/Documents/school/Application/Admin/Controller/CommonController.class.php 第 247 行.
+NOTIC: [8] Use of undefined constant addtime - assumed 'addtime' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 744 行.
+NOTIC: [8] Use of undefined constant userid - assumed 'userid' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 745 行.
+NOTIC: [8] Use of undefined constant content - assumed 'content' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 748 行.
+NOTIC: [8] Use of undefined constant addtime - assumed 'addtime' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 744 行.
+NOTIC: [8] Use of undefined constant userid - assumed 'userid' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 745 行.
+NOTIC: [8] Use of undefined constant content - assumed 'content' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 748 行.
+NOTIC: [8] Use of undefined constant addtime - assumed 'addtime' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 744 行.
+NOTIC: [8] Use of undefined constant userid - assumed 'userid' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 745 行.
+NOTIC: [8] Use of undefined constant content - assumed 'content' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 748 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000532s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000586s ]
+
+[ 2017-10-28T20:59:50+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Kehu&a=chakan_genjin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000423s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003851s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004603s ]
+NOTIC: [8] Undefined variable: list /Library/WebServer/Documents/school/Application/Admin/Controller/CommonController.class.php 第 247 行.
+NOTIC: [8] Use of undefined constant addtime - assumed 'addtime' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 744 行.
+NOTIC: [8] Use of undefined constant userid - assumed 'userid' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 745 行.
+NOTIC: [8] Use of undefined constant content - assumed 'content' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 748 行.
+NOTIC: [8] Use of undefined constant addtime - assumed 'addtime' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 744 行.
+NOTIC: [8] Use of undefined constant userid - assumed 'userid' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 745 行.
+NOTIC: [8] Use of undefined constant content - assumed 'content' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 748 行.
+NOTIC: [8] Use of undefined constant addtime - assumed 'addtime' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 744 行.
+NOTIC: [8] Use of undefined constant userid - assumed 'userid' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 745 行.
+NOTIC: [8] Use of undefined constant content - assumed 'content' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 748 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000554s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000606s ]
+
+[ 2017-10-28T21:03:33+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Admin&a=Login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003766s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004697s ]
+NOTIC: [8] Undefined index: admin /Library/WebServer/Documents/school/Application/Admin/Controller/CommonController.class.php 第 230 行.
+NOTIC: [8] Undefined variable: list /Library/WebServer/Documents/school/Application/Admin/Controller/CommonController.class.php 第 247 行.
+NOTIC: [8] Undefined index: admin /Library/WebServer/Documents/school/Application/Admin/Controller/CommonController.class.php 第 249 行.
+NOTIC: [8] Undefined index: tx /Library/WebServer/Documents/school/Application/Admin/Controller/CommonController.class.php 第 140 行.
+NOTIC: [8] Undefined index: validate /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+
+[ 2017-10-28T21:03:35+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Admin&a=update_tixiang
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000416s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006090s ]
+NOTIC: [8] Undefined variable: list /Library/WebServer/Documents/school/Application/Admin/Controller/CommonController.class.php 第 247 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000547s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000604s ]
+
+[ 2017-10-28T21:09:26+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Power&a=PowerSave
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004845s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005655s ]
+NOTIC: [8] Undefined variable: list /Library/WebServer/Documents/school/Application/Admin/Controller/CommonController.class.php 第 247 行.
+NOTIC: [8] Undefined index: validate /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/6e4bbf851f7c0c0ae68203d7ed909362.php): No such file or directory /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/0d9f476d8676f036d22a1d603ea4f37f.php): No such file or directory /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/306b043c6009422205c8752f82468910.php): No such file or directory /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/026f8a61dd7b4feb69e063fbdce0a1c0.php): No such file or directory /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/624de08e3d626cb3ff9e0f0383b96391.php): No such file or directory /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/160b362d03ad6dafa06d4e20f3c5dfaf.php): No such file or directory /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/5f10415064b982e007ef34b261527bd6.php): No such file or directory /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/0d3375cf39346c9de0c934d0d8490496.php): No such file or directory /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/9eb241a7c6aab64c7c50f4bb3a03b0d0.php): No such file or directory /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/1c849e6c21dabc2fc6718ba0a688eb47.php): No such file or directory /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/f92fd0dfb0b42c7bd72f1d1a947ca537.php): No such file or directory /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/b10e76cf713dc3a91c5b4ba964b53370.php): No such file or directory /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/74ee55d4d74962f77f3f5a0ab121a550.php): No such file or directory /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/fb62c04ece589df13301d018857c9f96.php): No such file or directory /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/45ddf0cc72c3fc9d2d09270dafe7cb5c.php): No such file or directory /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/71736aa693d8504c4101df55c638be10.php): No such file or directory /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/d48036079b7e569b334b7c4db4677721.php): No such file or directory /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/792a991815b91ba202b2c17f49ecfd9f.php): No such file or directory /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/944404563a88013b9782ac87d3a8537b.php): No such file or directory /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/e0a2881005b9b098f12331812b6d3141.php): No such file or directory /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/bc7b89f8a9bdca5a121c86792edf48e2.php): No such file or directory /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/2c4c99033fed6f93e272dc9d97cb38c9.php): No such file or directory /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/346b0ecfea1d410acb20837eaada5616.php): No such file or directory /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/445acd6b9ffa1e9727b4d79053cbd5f2.php): No such file or directory /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/a65e6961a13083f21a6719bf8070cd5a.php): No such file or directory /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/0b4fd0185e3b75ac25e265f1b39be678.php): No such file or directory /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+
+[ 2017-10-28T21:33:13+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Power&a=PowerSave
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000418s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005241s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006032s ]
+NOTIC: [8] Undefined variable: list /Library/WebServer/Documents/school/Application/Admin/Controller/CommonController.class.php 第 247 行.
+NOTIC: [8] Undefined index: validate /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/6e4bbf851f7c0c0ae68203d7ed909362.php): No such file or directory /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/0d9f476d8676f036d22a1d603ea4f37f.php): No such file or directory /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/306b043c6009422205c8752f82468910.php): No such file or directory /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/026f8a61dd7b4feb69e063fbdce0a1c0.php): No such file or directory /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/624de08e3d626cb3ff9e0f0383b96391.php): No such file or directory /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/160b362d03ad6dafa06d4e20f3c5dfaf.php): No such file or directory /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/5f10415064b982e007ef34b261527bd6.php): No such file or directory /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/0d3375cf39346c9de0c934d0d8490496.php): No such file or directory /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/9eb241a7c6aab64c7c50f4bb3a03b0d0.php): No such file or directory /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/1c849e6c21dabc2fc6718ba0a688eb47.php): No such file or directory /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/f92fd0dfb0b42c7bd72f1d1a947ca537.php): No such file or directory /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/b10e76cf713dc3a91c5b4ba964b53370.php): No such file or directory /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/74ee55d4d74962f77f3f5a0ab121a550.php): No such file or directory /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/fb62c04ece589df13301d018857c9f96.php): No such file or directory /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/45ddf0cc72c3fc9d2d09270dafe7cb5c.php): No such file or directory /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/71736aa693d8504c4101df55c638be10.php): No such file or directory /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/d48036079b7e569b334b7c4db4677721.php): No such file or directory /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/792a991815b91ba202b2c17f49ecfd9f.php): No such file or directory /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/944404563a88013b9782ac87d3a8537b.php): No such file or directory /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/e0a2881005b9b098f12331812b6d3141.php): No such file or directory /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/bc7b89f8a9bdca5a121c86792edf48e2.php): No such file or directory /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/2c4c99033fed6f93e272dc9d97cb38c9.php): No such file or directory /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/346b0ecfea1d410acb20837eaada5616.php): No such file or directory /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/445acd6b9ffa1e9727b4d79053cbd5f2.php): No such file or directory /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/a65e6961a13083f21a6719bf8070cd5a.php): No such file or directory /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/0b4fd0185e3b75ac25e265f1b39be678.php): No such file or directory /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+
+[ 2017-10-28T21:41:47+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Kehu&a=gaibian
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000392s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003248s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003964s ]
+NOTIC: [8] Undefined variable: list /Library/WebServer/Documents/school/Application/Admin/Controller/CommonController.class.php 第 247 行.
+NOTIC: [8] Undefined index:  /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 778 行.
+
+[ 2017-10-28T21:41:48+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Kehu&a=chakan_genjin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000451s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004084s ]
+NOTIC: [8] Undefined variable: list /Library/WebServer/Documents/school/Application/Admin/Controller/CommonController.class.php 第 247 行.
+NOTIC: [8] Use of undefined constant addtime - assumed 'addtime' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 744 行.
+NOTIC: [8] Use of undefined constant userid - assumed 'userid' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 745 行.
+NOTIC: [8] Use of undefined constant content - assumed 'content' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 748 行.
+NOTIC: [8] Use of undefined constant addtime - assumed 'addtime' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 744 行.
+NOTIC: [8] Use of undefined constant userid - assumed 'userid' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 745 行.
+NOTIC: [8] Use of undefined constant content - assumed 'content' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 748 行.
+NOTIC: [8] Use of undefined constant addtime - assumed 'addtime' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 744 行.
+NOTIC: [8] Use of undefined constant userid - assumed 'userid' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 745 行.
+NOTIC: [8] Use of undefined constant content - assumed 'content' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 748 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000582s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000642s ]
+
+[ 2017-10-28T21:41:52+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Kehu&a=gaibian
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000424s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003497s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004292s ]
+NOTIC: [8] Undefined variable: list /Library/WebServer/Documents/school/Application/Admin/Controller/CommonController.class.php 第 247 行.
+NOTIC: [8] Undefined index:  /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 778 行.
+
+[ 2017-10-28T21:41:58+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Kehu&a=chakan_genjin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003546s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004344s ]
+NOTIC: [8] Undefined variable: list /Library/WebServer/Documents/school/Application/Admin/Controller/CommonController.class.php 第 247 行.
+NOTIC: [8] Use of undefined constant addtime - assumed 'addtime' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 744 行.
+NOTIC: [8] Use of undefined constant userid - assumed 'userid' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 745 行.
+NOTIC: [8] Use of undefined constant content - assumed 'content' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 748 行.
+NOTIC: [8] Use of undefined constant addtime - assumed 'addtime' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 744 行.
+NOTIC: [8] Use of undefined constant userid - assumed 'userid' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 745 行.
+NOTIC: [8] Use of undefined constant content - assumed 'content' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 748 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000534s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000598s ]
+
+[ 2017-10-28T21:42:09+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Kehu&a=gaibian
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000389s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003277s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003979s ]
+NOTIC: [8] Undefined variable: list /Library/WebServer/Documents/school/Application/Admin/Controller/CommonController.class.php 第 247 行.
+NOTIC: [8] Undefined index:  /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 778 行.
+
+[ 2017-10-28T21:42:13+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Kehu&a=chakan_genjin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003249s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004052s ]
+NOTIC: [8] Undefined variable: list /Library/WebServer/Documents/school/Application/Admin/Controller/CommonController.class.php 第 247 行.
+NOTIC: [8] Use of undefined constant addtime - assumed 'addtime' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 744 行.
+NOTIC: [8] Use of undefined constant userid - assumed 'userid' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 745 行.
+NOTIC: [8] Use of undefined constant content - assumed 'content' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 748 行.
+NOTIC: [8] Use of undefined constant addtime - assumed 'addtime' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 744 行.
+NOTIC: [8] Use of undefined constant userid - assumed 'userid' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 745 行.
+NOTIC: [8] Use of undefined constant content - assumed 'content' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 748 行.
+NOTIC: [8] Use of undefined constant addtime - assumed 'addtime' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 744 行.
+NOTIC: [8] Use of undefined constant userid - assumed 'userid' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 745 行.
+NOTIC: [8] Use of undefined constant content - assumed 'content' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 748 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000530s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000582s ]
+
+[ 2017-10-28T21:42:36+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Kehu&a=gaibian
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000386s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004021s ]
+NOTIC: [8] Undefined variable: list /Library/WebServer/Documents/school/Application/Admin/Controller/CommonController.class.php 第 247 行.
+
+[ 2017-10-28T21:42:37+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Kehu&a=chakan_genjin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003776s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004484s ]
+NOTIC: [8] Undefined variable: list /Library/WebServer/Documents/school/Application/Admin/Controller/CommonController.class.php 第 247 行.
+NOTIC: [8] Use of undefined constant addtime - assumed 'addtime' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 744 行.
+NOTIC: [8] Use of undefined constant userid - assumed 'userid' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 745 行.
+NOTIC: [8] Use of undefined constant content - assumed 'content' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 748 行.
+NOTIC: [8] Use of undefined constant addtime - assumed 'addtime' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 744 行.
+NOTIC: [8] Use of undefined constant userid - assumed 'userid' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 745 行.
+NOTIC: [8] Use of undefined constant content - assumed 'content' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 748 行.
+NOTIC: [8] Use of undefined constant addtime - assumed 'addtime' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 744 行.
+NOTIC: [8] Use of undefined constant userid - assumed 'userid' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 745 行.
+NOTIC: [8] Use of undefined constant content - assumed 'content' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 748 行.
+NOTIC: [8] Use of undefined constant addtime - assumed 'addtime' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 744 行.
+NOTIC: [8] Use of undefined constant userid - assumed 'userid' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 745 行.
+NOTIC: [8] Use of undefined constant content - assumed 'content' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 748 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000568s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000628s ]
+
+[ 2017-10-28T21:42:48+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Kehu&a=chakan_genjin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000406s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003421s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004163s ]
+NOTIC: [8] Undefined variable: list /Library/WebServer/Documents/school/Application/Admin/Controller/CommonController.class.php 第 247 行.
+NOTIC: [8] Use of undefined constant addtime - assumed 'addtime' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 744 行.
+NOTIC: [8] Use of undefined constant userid - assumed 'userid' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 745 行.
+NOTIC: [8] Use of undefined constant content - assumed 'content' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 748 行.
+NOTIC: [8] Use of undefined constant addtime - assumed 'addtime' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 744 行.
+NOTIC: [8] Use of undefined constant userid - assumed 'userid' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 745 行.
+NOTIC: [8] Use of undefined constant content - assumed 'content' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 748 行.
+NOTIC: [8] Use of undefined constant addtime - assumed 'addtime' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 744 行.
+NOTIC: [8] Use of undefined constant userid - assumed 'userid' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 745 行.
+NOTIC: [8] Use of undefined constant content - assumed 'content' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 748 行.
+NOTIC: [8] Use of undefined constant addtime - assumed 'addtime' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 744 行.
+NOTIC: [8] Use of undefined constant userid - assumed 'userid' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 745 行.
+NOTIC: [8] Use of undefined constant content - assumed 'content' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 748 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000536s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000589s ]
+
+[ 2017-10-28T22:23:34+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Kehu&a=Save
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000430s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005755s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006568s ]
+NOTIC: [8] Undefined variable: list /Library/WebServer/Documents/school/Application/Admin/Controller/CommonController.class.php 第 247 行.
+NOTIC: [8] Undefined index: validate /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+
+[ 2017-10-28T22:24:19+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Kehu&a=Save
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.007261s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008315s ]
+NOTIC: [8] Undefined variable: list /Library/WebServer/Documents/school/Application/Admin/Controller/CommonController.class.php 第 247 行.
+NOTIC: [8] Undefined index: validate /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+
+[ 2017-10-28T22:25:02+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Kehu&a=Save
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000456s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005248s ]
+NOTIC: [8] Undefined variable: list /Library/WebServer/Documents/school/Application/Admin/Controller/CommonController.class.php 第 247 行.
+NOTIC: [8] Undefined index: validate /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+
+[ 2017-10-28T22:25:08+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Kehu&a=Save
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.019115s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.020020s ]
+NOTIC: [8] Undefined variable: list /Library/WebServer/Documents/school/Application/Admin/Controller/CommonController.class.php 第 247 行.
+NOTIC: [8] Undefined index: validate /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+
+[ 2017-10-28T22:26:17+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Kehu&a=Save
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000394s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.016156s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016890s ]
+NOTIC: [8] Undefined variable: list /Library/WebServer/Documents/school/Application/Admin/Controller/CommonController.class.php 第 247 行.
+NOTIC: [8] Undefined index: validate /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /Library/WebServer/Documents/school/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+
+[ 2017-10-28T22:32:24+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Kehu&a=chakan_genjin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003248s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004023s ]
+NOTIC: [8] Undefined variable: list /Library/WebServer/Documents/school/Application/Admin/Controller/CommonController.class.php 第 247 行.
+NOTIC: [8] Use of undefined constant addtime - assumed 'addtime' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 749 行.
+NOTIC: [8] Use of undefined constant userid - assumed 'userid' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 750 行.
+NOTIC: [8] Use of undefined constant content - assumed 'content' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 753 行.
+NOTIC: [8] Use of undefined constant addtime - assumed 'addtime' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 749 行.
+NOTIC: [8] Use of undefined constant userid - assumed 'userid' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 750 行.
+NOTIC: [8] Use of undefined constant content - assumed 'content' /Library/WebServer/Documents/school/Application/Admin/Controller/KehuController.class.php 第 753 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000538s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000591s ]
+
+[ 2017-10-28T22:47:51+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Admin&a=update_tixiang
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000516s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.006395s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007785s ]
+NOTIC: [8] Undefined variable: list /Library/WebServer/Documents/school/Application/Admin/Controller/CommonController.class.php 第 247 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000755s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000853s ]
+

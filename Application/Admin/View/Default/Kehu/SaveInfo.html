@@ -1,0 +1,169 @@
+<!-- header start -->
+<include file="Public/Header" />
+<!-- header end -->
+
+<!-- right content start  -->
+<div class="content-right">
+	<div class="content">
+		<!-- form start -->
+		<form class="am-form form-validation view-save" action="{{:U('Admin/Kehu/Save')}}" method="POST" request-type="ajax-url" request-value="{{:U('Admin/Kehu/Index')}}">
+			<legend>
+				<span class="fs-16">
+					<if condition="empty($data['id'])">
+						添加客户	
+					<else />
+						编辑客户
+					</if>
+				</span>
+				<a href="{{:U('Admin/Kehu/Index')}}" class="fr fs-14 m-t-5 am-icon-mail-reply"> {{:L('common_operation_back')}}</a>
+			</legend>
+			<div class="am-form-group">
+				<label>{{:L('student_username_text')}}</label>
+				<input type="text" name="username" placeholder="{{:L('student_username_text')}}" minlength="2" maxlength="16" data-validation-message="{{:L('student_username_format')}}" class="am-radius" <notempty name="data"> value="{{$data.username}}"</notempty> required />
+			</div>
+
+			
+			<include file="Lib/Gender" />
+			<div class="am-form-group">
+					<label>年龄</label>
+					<input type="text" name="age" class="am-radius" placeholder="年龄" data-validation-message="年龄" <notempty name="data"> value="{{$data.age}}" </notempty>  />
+				</div>
+			<div class="am-form-group">
+				<label>{{:L('student_birthday_text')}}</label>
+				<input type="text" name="birthday" class="am-radius" placeholder="{{:L('student_birthday_text')}}" pattern="{{:L('common_regex_birthday')}}" data-validation-message="{{:L('student_birthday_format')}}" <notempty name="data"> value="{{$data.birthday}}" </notempty> data-am-datepicker="{format: 'yyyy-mm-dd', viewMode: 'years'}" readonly required />
+			</div>
+			<div class="am-form-group">
+				<label>联系人姓名</label>
+				<input type="text" name="lxr_1" class="am-radius" placeholder="联系人姓名" data-validation-message="联系人姓名" <notempty name="data"> value="{{$data.lxr_1}}" </notempty> required />
+			</div>
+			<div class="am-form-group">
+				<label>联系人电话</label>
+				<input type="text" name="lxrtel_1" class="am-radius" placeholder="联系人电话" data-validation-message="联系人电话" <notempty name="data"> value="{{$data.lxrtel_1}}" </notempty> required />
+			</div>
+			<div class="am-form-group">
+				<label>联系人姓名2</label>
+				<input type="text" name="lxr_2" class="am-radius" placeholder="联系人姓名" data-validation-message="联系人姓名" <notempty name="data"> value="{{$data.lxr_2}}" </notempty>  />
+			</div>
+			<div class="am-form-group">
+				<label>联系人电话2</label>
+				<input type="text" name="lxrtel_2" class="am-radius" placeholder="联系人电话" data-validation-message="联系人电话" <notempty name="data"> value="{{$data.lxrtel_2}}" </notempty>  />
+			</div>
+			<div class="am-form-group">
+				<label>咨询课程</label>
+				<select  class="am-radius c-p" name="zx_kc" >
+					<option value="0">{{:L('common_select_can_choose')}}</option>
+					<foreach name="kecheng" item="v">
+						<option value="{{$v.name}}" <if condition="isset($data['zx_kc']) and $data['zx_kc'] eq $v['name']">selected</if>>{{$v.name}}</option>
+					</foreach>
+				</select>
+			</div>
+			
+			
+			<div class="am-form-group">
+				<label>状态</label>
+				<select  class="am-radius c-p" name="groupid" id="groupid">
+					
+					<foreach name="kehu_group" item="v">
+						<if condition="$key elt 3"> 
+							<option value="{{$key}}" <if condition="isset($data['groupid']) and $data['groupid'] eq $key">selected</if>>{{$v}}</option>
+						</if>
+						
+					</foreach>
+				</select>
+			</div>
+			
+			<div class="am-form-group yuyue_time" >
+				<label>预约时间</label>
+				<input type="text" name="yuyue_time" class="am-radius" placeholder="预约时间" pattern="{{:L('common_regex_birthday')}}" data-validation-message="预约时间" <notempty name="data"> value="{{$data.yuyue_time}}" </notempty> data-am-datepicker="{format: 'yyyy-mm-dd'}" readonly required />
+			</div>
+			<div class="am-form-group daofang_time" >
+				<label>到访时间</label>
+				<input type="text" name="daofang_time" class="am-radius" placeholder="到访时间" pattern="{{:L('common_regex_birthday')}}" data-validation-message="到访时间" <notempty name="data"> value="{{$data.daofang_time}}" </notempty> data-am-datepicker="{format: 'yyyy-mm-dd'}" readonly required />
+			</div>
+			<div class="am-form-group beizhu" >
+				<label>跟踪原因</label>
+				<textarea rows="3" maxlength="255" name="beizhu" class="am-radius" placeholder="跟踪原因" data-validation-message="跟踪原因"><present name="data">{{$data.beizhu}}</present></textarea>
+			</div>
+			<div class="am-form-group gw_id none">
+					<label>课程顾问</label>
+					<select  class="am-radius c-p" name="gw_id" >
+						<option value="0">{{:L('common_select_can_choose')}}</option>
+						<foreach name="guwen" item="v">
+							<option value="{{$v.id}}" <if condition="isset($data['gw_id']) and $data['gw_id'] eq $v['id']">selected</if>>{{$v.realname}}</option>
+						</foreach>
+					</select>
+			</div>
+			<div class="am-form-group">
+				<label>客户等级</label>
+				<select  class="am-radius c-p" name="level" >
+					
+					<foreach name="kehu_level" item="v">
+						<option value="{{$key}}" <if condition="isset($data['level']) and $data['level'] eq $key">selected</if>>{{$v}}</option>
+					</foreach>
+				</select>
+			</div>
+
+			<input type="hidden" name="id" <notempty name="data"> value="{{$data.id}}"</notempty> />
+			<!-- <div class="am-form-group">
+				<label>{{:L('student_tuition_state_text')}}</label>
+				<div>
+					<foreach name="common_tuition_state_list" item="v">
+						<label class="am-radio-inline m-r-10">
+							<input type="radio" name="tuition_state" value="{{$v.id}}" <if condition="isset($data['tuition_state']) and $data['tuition_state'] eq $v['id']">checked="checked"<else /><if condition="!isset($data['tuition_state']) and isset($v['checked']) and $v['checked'] eq true">checked="checked"</if></if> data-am-ucheck /> {{$v.name}}
+						</label>
+					</foreach>
+				</div> -->
+			</div>
+			<div class="am-form-group">
+				
+				<button type="submit" class="am-btn am-btn-primary am-radius btn-loading-example am-btn-sm w100" data-am-loading="{loadingText:'{{:L('common_form_loading_tips')}}'}">{{:L('common_operation_save')}}</button>
+			</div>
+		</form>
+        <!-- form end -->
+	</div>
+</div>
+<!-- right content end  -->
+		
+<!-- footer start -->
+<include file="Public/Footer" />
+<!-- footer end -->
+
+<script language="javascript" type="text/javascript"> 
+$(document).ready(function(){ 
+	$('#groupid').change(function(){ 
+		var groupid = $(this).val();
+		zdyjs_01(groupid);
+		
+	}) 
+
+	var groupid = $("#groupid").val();
+	zdyjs_01(groupid);
+	function zdyjs_01(groupid){
+		if(groupid == 1){
+		
+		$('.yuyue_time').removeClass('none');
+		$('.daofang_time').addClass('none');
+		}	
+		if(groupid == 2){
+			
+			$('.yuyue_time').addClass('none');
+			$('.daofang_time').addClass('none');
+		}
+		if(groupid == 3){
+			$('.yuyue_time').addClass('none');
+			$('.daofang_time').removeClass('none');
+			$('.gw_id').removeClass('none');
+		}else{
+			$('.gw_id').addClass('none');
+		}
+
+		// if(groupid == 4){
+			
+		// 	$('.yuyue_time').addClass('none');
+		// 	$('.gw_id').removeClass('none');
+		// }else{
+		// 	$('.gw_id').addClass('none');
+		// }
+	}
+}) 
+</script> 
